@@ -12,4 +12,3 @@ newguests = 185
 newspecial = 1
 newtotal = newstudents+newfacultystaff+newguests+newspecial
 print(newtotal/12)
-#should be 312 people or 26 tables
