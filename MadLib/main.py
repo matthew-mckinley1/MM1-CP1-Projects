@@ -1,4 +1,6 @@
 #Matthew McKinley MadLib
+#IN PROGRESS!!!!!
+#IN PROGRESS!!!!!
 
 #name and color use 2 times
 name = input("What is a name?")
