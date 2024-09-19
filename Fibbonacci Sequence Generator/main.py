@@ -1,18 +1,14 @@
 #Matthew McKinley Fibbonacci Sequence Generator
 
-
+num3 = 0
 def function():
-    num1 = 0
-    num2 = 1
-    num3 = num1+num2
-    printo = ""
-    print(printo)
-    printo+=num3
-
-
-#while num3 in (0,3000):
-
-
-
-#print(printo)
-#printo+=num1
+    while num3 <= 3000:
+        num1 = 0
+        int(num1) == num1
+        num2 = 1
+        int(num2) == num2
+        num3 = num1+num2
+        printo = 0
+        print(printo)
+        printo+=num3
+function()
