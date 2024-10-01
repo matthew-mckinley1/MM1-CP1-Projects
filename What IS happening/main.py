@@ -7,12 +7,14 @@ class BankAccount:
         self.balance = balance
 #sets the deposit function so you can deposit money
     def deposit(self, amount):
+        #checks if the amount is more than 0 so you can deposit money into your current balance
         if amount > 0:
             self.balance += amount
             return True
         return False
 #sets the withdraw function so you can take money
     def withdraw(self, amount):
+        #you can't have negative money so if the money is 0 then you can't withdraw
         if 0 < amount <= self.balance:
             self.balance -= amount
             return True
@@ -44,23 +46,31 @@ def main():
         #chekcs to see if cohice is 2, 3, or 4, and then if it is then you have to input the account number to get access to your account
         elif choice in ['2', '3', '4']:
             account_number = input("Enter account number: ")
+            #checks if you're real
             if account_number in accounts:
                 account = accounts[account_number]
+                #chekcs if choice is 2, if it is then uyou can deposit money
                 if choice == '2':
                     amount = float(input("Enter deposit amount: "))
+                    #checks if the money was deposited and yhow much
                     if account.deposit(amount):
                         print(f"Deposited ${amount:.2f} successfully!")
+                        #if it wastn any  of the other ones, it is invalid
                     else:
                         print("Invalid deposit amount.")
                 #checks to see if cohice is 3, and then it can withdraw money from account
                 elif choice == '3':
                     amount = float(input("Enter withdrawal amount: "))
+                    #checks if you're withdrawing, and the amount you withdrawed
                     if account.withdraw(amount):
                         print(f"Withdrawn ${amount:.2f} successfully!")
+                        #if it's not that then it is invalid
                     else:
                         print("Invalid withdrawal amount or insufficient funds.")
+                        #checks if you want to see your balance and gives it to you
                 else:
                     print(f"Current balance: ${account.get_balance():.2f}")
+                    #if the account number isnt in the list then it is not found
             else:
                 print("Account not found.")
         #checks to see if cohice is 5, then it leaves.
