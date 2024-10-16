@@ -18,16 +18,16 @@ def make_choice(options):
             else:
                 print("Invalid choice. Try again.")
         except ValueError:
-            print("Please enter a number.")
+                print("Please enter a number.")
         
 def explore_forest():
     print("You venture deeper into the forest...")
-events=["You encounter a friendly woodland creature.","You find a shimmering portal.","You discover an ancient ruins.","You come across a bubbling stream."]
-print(random.choice(events))
+    events=["You encounter a friendly woodland creature.","You find a shimmering portal.","You discover an ancient ruins.","You come across a bubbling stream."]
+    print(random.choice(events))
 
 def find_treasure():
     print("Congratulations! You've found the hidden treasure!")
-print("It's a chest filled with gold coins and magical artifacts.")
+    print("It's a chest filled with gold coins and magical artifacts.")
 
 def face_challenge():
     print("Oh no! You've encountered a challenge!")
@@ -42,24 +42,28 @@ def face_challenge():
 
 def play_game():
     display_intro()
-treasure_found=False
-while not treasure_found:
-    print("\nWhat would you like to do?")
-choice=make_choice(["Explore the forest","Search for treasure","Face a challenge","Exit the forest"])
-if choice==1:explore_forest()
-elif choice==2:
-    if random.random()<0.3:
-         find_treasure()
-         treasure_found=True
-    else:
-        print("No treasure here. Keep searching!")
-elif choice==3:
-        if face_challenge():
-            if random.random()<0.4:find_treasure()
-        treasure_found=True
-elif choice==4:
-        print("You decide to leave the forest. Game over!")
-        return
-if treasure_found:print("Congratulations! You've won the game!")
+    treasure_found=False
+    while not treasure_found:
+        print("\nWhat would you like to do?")
+        choice=make_choice(["Explore the forest","Search for treasure","Face a challenge","Exit the forest"])
+        if choice==1:
+                explore_forest()
+        elif choice==2:
+            if random.random()<0.3:
+                find_treasure()
+                treasure_found=True
+            else:
+                print("No treasure here. Keep searching!")
+        elif choice==3:
+            if face_challenge():
+                if random.random()<0.4:
+                    find_treasure()
+                    treasure_found=True
+        elif choice==4:
+            print("You decide to leave the forest. Game over!")
+            return
+    if treasure_found:
+        print("Congratulations! You've won the game!")
+
 if __name__=="__main__":
-        play_game()
+    play_game()
