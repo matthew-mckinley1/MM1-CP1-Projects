@@ -19,7 +19,7 @@ def start_game():
             game_over = True
         elif guess > number_to_guess:
             print("Too high! Try again.")
-        else: #make it an else to make it end instead of continue
+        else: #make it an else to make it end instead of continue (syntax), it would continue even if you didn't do anything
             guess < number_to_guess
             print("Too low! Try again.")
     print("Game Over. Thanks for playing!")
