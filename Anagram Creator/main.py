@@ -7,9 +7,3 @@ wordList = list(word.lower())
 random.shuffle(wordList)
 complete = "".join(wordList).title()
 print(complete)
-
-
-
-
-
-#use .title when you're printing to have it capitalized good ig
