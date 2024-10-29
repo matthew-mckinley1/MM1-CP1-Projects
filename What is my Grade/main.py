@@ -1,5 +1,5 @@
 #Matthew McKinley What is My Grade?
-#100, 94, 90, 87, 84, 80, 77, 74, 70, 67, 64, 60 0 (grades in this class I am submitting this for)
+#100, 94, 90, 87, 84, 80, 77, 74, 70, 67, 64, 60 0 (grades in this class I am submitting this for) 
 grade = int(input("What is your percentage grade?"))
 if grade >= 100:
     print("You are perfect or more than perfect you're cheating cheater")
