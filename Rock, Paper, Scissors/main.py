@@ -13,10 +13,15 @@ def main():
 
 
 
-playagain = input("Do you want to play again (Y/N)?")
-if playagain == "Y"
-main()
-el
+    playagain = input("Do you want to play again (Y/N)?")
+    if playagain == "Y":
+        main()
+    else:
+        print("Goodbye!")
+        break
+    
+
+
 
 
 
