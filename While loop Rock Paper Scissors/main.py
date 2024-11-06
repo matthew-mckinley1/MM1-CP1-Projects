@@ -1,11 +1,33 @@
 #Matthew McKinley Rock Paper Scissors
 
 import random
-
-wins = int(0)
-games = int(0)
+wins = 0
+games = 0
 
 while True:
+    
+
+
+    def playerwin():
+        global games
+        global wins
+        print("You won!")
+        wins = wins + 1
+        games = games + 1
+
+    def draw():
+        global games
+        print("You tied!")
+        games = games + 1
+
+    def playerlose():
+        global games
+        print("You lost!")
+        games = games + 1
+
+
+
+
     choice = int(input("What weapon would you like to use? (1 for Rock, 2 for Paper, 3 for Scissors)"))
     if choice == 1:
         choice = "Rock"
@@ -28,36 +50,6 @@ while True:
     if comchoice == 3:
         comchoice = "Scissors"
         print(comchoice)
-
-
-        print("Your score is ", wins, "out of ", games)
-    playagain = input("Do you want to play again (Y/N)?")
-    if playagain == "Y":
-        continue
-    elif playagain == "N":
-        break
-    else:
-        print("You typed something wrong")
-
-    def playerwin():
-        global games
-        global wins
-        print("You won!")
-        wins = wins + 1
-        games = games + 1
-        playagain()
-
-    def draw():
-        global games
-        print("You tied!")
-        games = games + 1
-        playagain()
-
-    def playerlose():
-        global games
-        print("You lost!")
-        games = games + 1
-        playagain()
 
 #tie conditions
     if choice == "Rock" and comchoice == "Rock":
@@ -82,4 +74,20 @@ while True:
         playerlose()
     else:
         print("You typed something wrong!")
-        playagain()
+
+    print("Your score is ", wins, "out of ", games)
+    playagain = input("Do you want to play again? (Y/N)")
+    if playagain == "N":
+        break
+
+
+
+
+    
+
+
+    
+ 
+    
+    
+
