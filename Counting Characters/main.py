@@ -25,17 +25,4 @@ for row in grid:
             d = d + 1
         elif letter == "E":
             e = e + 1
-print(a,b,c,d,e)
-
-
-
-
-#for 'B' in grid:
-        #b = 'B'
-        #for 'C' in grid:
-            #c = 'C'
-            #for 'D' in grid:
-                #d = 'D'
-                #for 'E' in grid:
-                    #e = 'E'
-                    #print('A = ',a, 'B = ',b, 'C = ',c, 'D = ',d, 'E = ',e,)
+print("A =",a,"B =",b,"C =",c,"D =",d,"E =",e)
