@@ -62,7 +62,7 @@ def check():
     for row in board:
         if row[0] == "O":
             columnO += 1
-    columnO = 0 #FIX THIS NEXT TIME
+    columnO = 0 
     for row in board:
         if row[1] == "O":
             columnO += 1
