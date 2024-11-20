@@ -1,14 +1,14 @@
+#Matthew McKinley simple histogram
+
 user = []
 
 while True:
     num = int(input("input a number."))
     user.append(num)
-    for item in user:
-        
-
-
-#for i in range():
-    #print("1:")
-
-
+    for i in user:
+        for item in range(i):
+            printy = i
+            user.clear()
+        print("*"*printy)
+            
 
