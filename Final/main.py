@@ -126,6 +126,9 @@ def gnomewizardcombat():
         elif gnomewizardhealth == 0:
             gnomewizardhealth = True
             print("The Gnome wizard is DEAD!!!!")
+            print("You see a blue bubbly liquid inside of a flask. You drink it. You obtained more health, and it has been restored.")
+            maxHp = 130
+            tempHp = 130
             inp1 = int("Press 1 to go left and press 2 to go right")
             if inp1 == 1
                 room7()
@@ -166,6 +169,8 @@ def gnomearchercombat():
         elif gnomearcherhealth == 0:
             gnomearcherhealth = True
             print("The Gnome archers are DEAD!!!!")
+            print("You see a shiny shield and equip it")
+            defense = 20
 
 
 def gnomeroguecombat():
