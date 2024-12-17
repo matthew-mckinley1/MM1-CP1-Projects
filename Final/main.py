@@ -103,8 +103,9 @@ def gnomewizardcombat():
             print("\nYou see a blue bubbly liquid inside of a flask. You drink it. You obtained more health, and your health has been restored.")
             maxHp = 130
             tempHp = 130
-            inp1 = int(input(("Press 1 to go left and press 2 to go right")))
+            inp1 = int(input(("Press 1 to go left and press 2 to go right\n:")))
             if inp1 == 1:
+                
                 room7()
             elif inp1 == 2:
                 room8()
